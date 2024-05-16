@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: #bd0ff7;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #photos img {
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .row {
+  display: flex; /* Makes elements display as a row */
+  flex-wrap: wrap; /* Allows elements to wrap onto multiple lines */
+}
+.like-container {
+  display: flex;
+  align-items: center;
+}
+
+.like-emoji {
+  margin-left: 10px;
+}
+.column {
+  flex: 50%; /* Sets each column to take up 50% of the row width */
+  padding: 10px; /* Adds some margin for spacing */
+  text-align: center; /* Centers the text within each column */
+}
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .qr-code {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }  

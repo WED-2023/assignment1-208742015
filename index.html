@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grandma's Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="menu" class="topnav">LOGO</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#like">Like</a></li>
+        </li><a href="#qrcoder">QR code</a></li>
+        <li><a href="#contact">Contact Me</a></li>  
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2><u>about me </u></h2>
+      <p>Hi there! Welcome to my corner of the web. I'm an old woman who's seen the world change from horse-drawn carriages to smartphones.
+
+        Life's been a journey of joy, sorrow, and resilience. I've held grandchildren, witnessed sunsets, and learned the power of love and kindness.
+        
+        Now, with a lifetime etched on my face, I share stories, wisdom, and maybe a few ramblings.  Pull up a chair, let's connect!</p>
+    </section>
+  
+
+    <section id="photos">
+      <h2><u>My Photos</u></h2>
+      <div class="row">
+        <figure>
+          <img src="images\young.png" alt="Young Grandma">
+          <figcaption>Grandma as a child</figcaption>
+        </figure>
+        <figure>
+          <img src="images\parents.png" alt="Grandma with Parents">
+          <figcaption>Grandma with her parents</figcaption>
+        </figure>
+      </div>
+      <div class="row">
+        <figure>
+          <img src="images\wedding.png" alt="Grandma and Grandpa's Wedding">
+          <figcaption>Grandma and Grandpa on their wedding day</figcaption>
+        </figure>
+        <figure>
+          <img src="images\family.png" alt="Grandma with Family">
+          <figcaption>Grandma with her family</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="playlist">
+      <h2><u>Playlist</u></h2>
+      <P>Grandma's Favorite Songs</P>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/QbYu0GQSD7s?si=3_kIfEcm3AhlYY-8" title="Grandma's Favorite Songs" frameborder="0" allowfullscreen></iframe>
+      </section>
+    
+
+      <figure>
+        <img src="images\young.png" alt="Young Grandma">
+        <figcaption>Grandma as a child</figcaption>
+        <div class="like-container">
+          <button class="like-btn">
+            <span class="like-text">Give me a Like  (0)</span>
+            <span class="like-emoji">&#128077;</span>
+          </button>
+        </div>
+      </figure>
+
+
+    <section id="contact">
+      <h2><u>Contact Me</u></h2>
+      <p>Feel free to leave a message for me or Grandma!</p>
+      <form id="contact-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  
+  <div class="qr-code">
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
