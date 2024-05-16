@@ -5,7 +5,7 @@ form.addEventListener('submit', (event) => {
   const message = document.getElementById('message').value;
 })
 const likeButtons = document.querySelectorAll('.like-btn');
-
+// dsfsd
 likeButtons.forEach(button => {
   button.addEventListener('click', () => {
     const likeText = button.querySelector('.like-text');
