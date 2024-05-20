@@ -8,14 +8,16 @@
 </head>
 <body>
   <header>
-    <div id="menu" class="topnav">LOGO</div>
+    <div id="menu" class="topnav">
+      <img src="images/logo-black.png" alt="Logo" class="logo">
+    </div>
     <nav>
       <ul>
         <li><a href="#about">About Me</a></li>
         <li><a href="#photos">My Photos</a></li>
         <li><a href="#playlist">My Playlist</a></li>
         <li><a href="#like">Like</a></li>
-        </li><a href="#qrcoder">QR code</a></li>
+        <li><a href="#qrcoder">QR code</a></li>
         <li><a href="#contact">Contact Me</a></li>  
       </ul>
     </nav>
@@ -23,34 +25,29 @@
 
   <main>
     <section id="about">
-      <h2><u>about me </u></h2>
-      <p>Hi there! Welcome to my corner of the web. I'm an old woman who's seen the world change from horse-drawn carriages to smartphones.
-
-        Life's been a journey of joy, sorrow, and resilience. I've held grandchildren, witnessed sunsets, and learned the power of love and kindness.
-        
-        Now, with a lifetime etched on my face, I share stories, wisdom, and maybe a few ramblings.  Pull up a chair, let's connect!</p>
+      <h2><u>About Me</u></h2>
+      <p>Hi there! Welcome to my corner of the web. I'm an old woman who's seen the world change from horse-drawn carriages to smartphones. Life's been a journey of joy, sorrow, and resilience. I've held grandchildren, witnessed sunsets, and learned the power of love and kindness. Now, with a lifetime etched on my face, I share stories, wisdom, and maybe a few ramblings. Pull up a chair, let's connect!</p>
     </section>
-  
 
     <section id="photos">
       <h2><u>My Photos</u></h2>
       <div class="row">
         <figure>
-          <img src="images\young.png" alt="Young Grandma">
+          <img src="images/young.png" alt="Young Grandma">
           <figcaption>Grandma as a child</figcaption>
         </figure>
         <figure>
-          <img src="images\parents.png" alt="Grandma with Parents">
+          <img src="images/parents.png" alt="Grandma with Parents">
           <figcaption>Grandma with her parents</figcaption>
         </figure>
       </div>
       <div class="row">
         <figure>
-          <img src="images\wedding.png" alt="Grandma and Grandpa's Wedding">
+          <img src="images/wedding.png" alt="Grandma and Grandpa's Wedding">
           <figcaption>Grandma and Grandpa on their wedding day</figcaption>
         </figure>
         <figure>
-          <img src="images\family.png" alt="Grandma with Family">
+          <img src="images/family.png" alt="Grandma with Family">
           <figcaption>Grandma with her family</figcaption>
         </figure>
       </div>
@@ -58,13 +55,13 @@
 
     <section id="playlist">
       <h2><u>Playlist</u></h2>
-      <P>Grandma's Favorite Songs</P>
+      <p>Grandma's Favorite Songs</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/QbYu0GQSD7s?si=3_kIfEcm3AhlYY-8" title="Grandma's Favorite Songs" frameborder="0" allowfullscreen></iframe>
-      </section>
-    
+    </section>
 
+    <section id="like">
       <figure>
-        <img src="images\young.png" alt="Young Grandma">
+        <img src="images/young.png" alt="Young Grandma">
         <figcaption>Grandma as a child</figcaption>
         <div class="like-container">
           <button class="like-btn">
@@ -73,23 +70,74 @@
           </button>
         </div>
       </figure>
+    </section>
 
+    <section id="qrcoder">
+      <h2>QR Code</h2>
+      <p>Scan to visit our website</p>
+      <img src="images/QRcode.png" alt="Scan to visit our website">
+    </section>
+
+    <section id="Q&A" class="qa-accordion">
+      <h2>Q&A</h2>
+      <div class="qa-item">
+        <h3 class="qa-question">Differences between Web 1.0, Web 2.0, and Web 3.0</h3>
+        <div class="qa-answer">
+          <p>Web 1.0, also known as the "read-only web," primarily focused on information delivery with limited user interaction. Web 2.0, often referred to as the "participatory web," shifted towards user-generated content and interactive experiences. Web 3.0, or the "decentralized web," envisions a more democratized web with user empowerment and data ownership.</p>
+          <p>Overall, the evolution of the web has been a journey from static pages to highly interactive applications that can understand and respond to user needs in a sophisticated way.</p>
+        </div>
+      </div>
+
+      <div class="qa-item">
+        <h3 class="qa-question">Query: "Best Italian restaurant in New York City"</h3>
+        <div class="qa-answer">
+          <p>When searching for this query on Web 1.0, the user would likely get a list of search results that would include websites with basic information about Italian restaurants in New York City. The user would need to manually visit each website and read through the content to determine which restaurant might be the best.</p>
+          <p>With Web 2.0, the search experience becomes more dynamic and user-driven. Search engines like Google provide more refined results, incorporating user reviews, forums, and social media discussions. Interactive tools like symptom checkers and medication interaction databases emerge.</p>
+          <p>In Web 3.0, the search for the best Italian restaurant would be personalized and contextualized based on individual preferences. Blockchain-powered applications could connect users with trusted food critics, bloggers, and restaurant communities. This could enable data-driven insights and personalized recommendations based on past dining experiences and dietary restrictions.</p>
+        </div>
+      </div>
+    </section>
 
     <section id="contact">
       <h2><u>Contact Me</u></h2>
       <p>Feel free to leave a message for me or Grandma!</p>
+      <p>Email: <a href="mailto:rayanb@post.bgu.ac.il">rayanb@post.bgu.ac.il</a></p>
+      <p>Phone: <a href="tel:+97256743883">+972 (56) 743-883</a></p>
       <form id="contact-form">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
+
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <label for="emoji-list">Select an emoji:</label>
+        <select id="emoji-list" name="emoji">
+          <option value="">None</option>
+          <option value="😊">😊</option>
+          <option value="😄">😄</option>
+          <option value="😁">😁</option>
+          <option value="😂">😂</option>
+          <option value="❤️">❤️</option>
+          <option value="😘">😘</option>
+          <option value="🙌">🙌</option>
+          <option value="👌">👌</option>
+          <option value="💕">💕</option>
+          <option value="😒">😒</option>
+          <option value="😎">😎</option>
+          <option value="🤗">🤗</option>
+          <option value="😍">😍</option>
+          <option value="🤩">🤩</option>
+          <option value="😇">😇</option>
+          <option value="😋">😋</option>
+          <option value="🥳">🥳</option>
+          <option value="😜">😜</option>
+          <option value="🤓">🤓</option>
+        </select><br><br>
+    
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
-  
-  <div class="qr-code">
-    </div>
   
   <script src="script.js"></script>
 </body>

@@ -1,59 +1,67 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  header {
-    background-color: #bd0ff7;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #photos img {
-    width: 300px; /* Adjust width as needed */
-    height: 200px; /* Adjust height as needed */
-  }
-  
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  section {
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: white;
-  }
-  .row {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Light cyan background for the whole page */
+}
+
+header {
+  background-color: #bd0ff7;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Make the header fixed */
+  top: 0;
+  width: 100%; /* Make the header take the full width */
+  z-index: 1000; /* Ensure the header stays on top */
+}
+
+header .logo {
+  height: 40px; /* Adjust the height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+#photos img {
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
+
+nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+  padding-top: 60px; /* Add padding to prevent content from being hidden behind the fixed header */
+}
+
+section {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for sections */
+}
+
+.row {
   display: flex; /* Makes elements display as a row */
   flex-wrap: wrap; /* Allows elements to wrap onto multiple lines */
 }
+
 .like-container {
   display: flex;
   align-items: center;
@@ -62,31 +70,86 @@ body {
 .like-emoji {
   margin-left: 10px;
 }
+
+.qr-code {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  margin: 0 auto; /* Centers the QR code horizontally */
+}
+
+/* Q&A Accordion Styling */
+.qa-accordion {
+  background-color: #f7f7f7; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+  margin: 2rem 0; /* Add some margin for spacing */
+  padding: 1rem; /* Add some padding inside the section */
+}
+
+.qa-item {
+  margin-bottom: 1rem; /* Add space between question/answer items */
+  border-bottom: 1px solid #ddd; /* Add a thin border to separate items */
+  cursor: pointer; /* Make the item clickable (optional) */
+}
+
+.qa-question {
+  font-size: 1.1rem; /* Adjust question font size */
+  font-weight: bold; /* Make questions bold for emphasis */
+  margin-bottom: 0.5rem; /* Add some space after the question */
+  padding: 0.5rem 1rem; /* Add some padding around the question */
+  border-top-left-radius: 5px; /* Rounded top left corner for the first item */
+  border-top-right-radius: 5px; /* Rounded top right corner for the first item */
+  background-color: #eee; /* Light background for the question */
+}
+
+.qa-answer {
+  padding: 0.5rem 1rem; /* Add some padding around the answer */
+  border-bottom-left-radius: 5px; /* Rounded bottom left corner */
+  border-bottom-right-radius: 5px; /* Rounded bottom right corner */
+}
+
+.qa-answer p {
+  line-height: 1.5; /* Adjust line spacing for readability */
+}
+
 .column {
   flex: 50%; /* Sets each column to take up 50% of the row width */
   padding: 10px; /* Adds some margin for spacing */
   text-align: center; /* Centers the text within each column */
 }
-  
-  h2 {
-    margin-bottom: 10px;
-  }
-  
-  img {
-    width: 200px;
-    margin: 10px;
-  }
-  
-  .qr-code {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-  }
-  
-  #contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px
-  }  
+
+h2 {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 200px;
+  margin: 10px;
+}
+
+.qr-code {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#contact a {
+  color: #bd0ff7;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
